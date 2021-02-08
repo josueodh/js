@@ -22,15 +22,18 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "prettier/prettier": "error",
-    "no-use-before-define": "off",
     "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/ban-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-use-before-define": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "import/prefer-default-export": "off",
-    "no-unused-expressions": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
