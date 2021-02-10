@@ -14,6 +14,7 @@ export default class ProfileController {
     const user = await showProfile.execute({ user_id });
 
     delete user.password;
+
     return response.json(user);
   }
   public async update(request: Request, response: Response): Promise<Response> {
