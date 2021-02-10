@@ -1,9 +1,9 @@
 import { startOfHour } from 'date-fns';
-import { inject, injectable } from 'tsyringe';
-
-import Appointment from '../infra/typeorm/entities/Appointment';
+import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
+
+import Appointment from '../infra/typeorm/entities/Appointment';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
 interface IRequest {
