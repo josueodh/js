@@ -1,14 +1,14 @@
 import {
-  Column,
-  CreateDateColumn,
-  Entity,
   ObjectID,
   ObjectIdColumn,
+  Entity,
+  Column,
+  CreateDateColumn,
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity('notificaions')
-export default class Notification {
+@Entity('notifications')
+class Notification {
   @ObjectIdColumn()
   id: ObjectID;
 
@@ -27,3 +27,5 @@ export default class Notification {
   @UpdateDateColumn()
   updated_at: Date;
 }
+
+export default Notification;
