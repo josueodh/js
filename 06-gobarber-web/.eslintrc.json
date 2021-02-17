@@ -37,6 +37,7 @@
     "no-use-before-define": "off",
     "prettier/prettier": "error",
     "array-callback-return": "off",
+    "import/no-duplicates": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
