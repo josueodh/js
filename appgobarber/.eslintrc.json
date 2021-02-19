@@ -30,6 +30,7 @@
     "react/prop-types": "off",
     "no-unused-expressions": "off",
     "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/ban-types": "off",
     "react/jsx-props-no-spreading": "off",
     "no-use-before-define": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
