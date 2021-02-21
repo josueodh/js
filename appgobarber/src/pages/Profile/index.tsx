@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 import React, { useRef, useCallback } from 'react';
+import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import {
   View,
   ScrollView,
