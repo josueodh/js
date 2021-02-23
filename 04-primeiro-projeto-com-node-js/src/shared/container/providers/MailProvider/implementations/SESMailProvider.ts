@@ -9,6 +9,7 @@ import IMailProvider from '../models/IMailProvider';
 @injectable()
 export default class SESMailProvider implements IMailProvider {
   private client: Transporter;
+
   constructor(
     @inject('MailTemplateProvider')
     private mainTemplateProvider: IMailTemplateProvider,
@@ -19,6 +20,7 @@ export default class SESMailProvider implements IMailProvider {
       }),
     });
   }
+
   public async sendMail({
     to,
     from,

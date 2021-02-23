@@ -12,6 +12,14 @@ jest.mock("react-router-dom", () => {
     Link: ({ children }: { children: React.ReactNode }) => children,
   };
 });
+
+jest.mock("../../hooks/auth", () => {
+  return {
+    useAuth: () => ({
+      signIn: jest.fn(),
+    }),
+  };
+});
 describe("SignIn Page", () => {
   it("should be able to sign in", () => {
     const { getByPlaceholderText, getByText } = render(<SignIn />);

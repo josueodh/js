@@ -7,6 +7,7 @@ import IMailProvider from '../models/IMailProvider';
 @injectable()
 export default class EtherealMailProvider implements IMailProvider {
   private client: Transporter;
+
   constructor(
     @inject('MailTemplateProvider')
     private mainTemplateProvider: IMailTemplateProvider,
@@ -24,6 +25,7 @@ export default class EtherealMailProvider implements IMailProvider {
       this.client = transporter;
     });
   }
+
   public async sendMail({
     to,
     from,

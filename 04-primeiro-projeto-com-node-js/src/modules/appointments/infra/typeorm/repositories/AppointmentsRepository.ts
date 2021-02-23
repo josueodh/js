@@ -24,6 +24,7 @@ class AppointmentsRepository implements IAppointmentsRepository {
 
     return findAppointment;
   }
+
   public async findAllInMonthFromProvider({
     provider_id,
     month,
@@ -41,6 +42,7 @@ class AppointmentsRepository implements IAppointmentsRepository {
     });
     return appointments;
   }
+
   public async findAllInDayFromProvider({
     provider_id,
     day,
