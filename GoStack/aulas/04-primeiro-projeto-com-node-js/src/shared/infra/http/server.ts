@@ -2,13 +2,13 @@ import 'reflect-metadata';
 import 'dotenv/config';
 import express, { Request, Response, NextFunction } from 'express';
 import 'express-async-errors';
-import routes from './routes';
 import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
 import cors from 'cors';
 import '@shared/infra/typeorm';
 import '@shared/container';
 import { errors } from 'celebrate';
+import routes from './routes';
 import rateLimiter from './middlewares/rateLimiter';
 
 const app = express();
