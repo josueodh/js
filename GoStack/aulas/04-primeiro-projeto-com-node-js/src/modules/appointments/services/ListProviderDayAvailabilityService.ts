@@ -3,6 +3,7 @@ import { inject, injectable } from 'tsyringe';
 
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
+// eslint-disable-next-line @typescript-eslint/interface-name-prefix
 interface IRequest {
   provider_id: string;
   month: number;
@@ -47,7 +48,7 @@ class ListProviderDayAvailabilityService {
 
     const availability = eachHourArray.map(hour => {
       const hasAppointmentInHour = appointments.find(
-        appointment => getHours(appointment.date) == hour,
+        appointment => getHours(appointment.date) === hour,
       );
 
       const compareDate = new Date(year, month - 1, day, hour, 0, 0);
