@@ -1,17 +1,19 @@
 import {
-  Entity,
   Column,
-  PrimaryGeneratedColumn,
   CreateDateColumn,
+  PrimaryGeneratedColumn,
   UpdateDateColumn,
-  ManyToOne,
-  JoinColumn,
 } from "typeorm";
 
-@Entity("categories")
-class Appointment {
+class Specification {
   @PrimaryGeneratedColumn("uuid")
   id: string;
+
+  @Column()
+  name: string;
+
+  @Column()
+  description: string;
 
   @CreateDateColumn()
   created_at: Date;
@@ -20,4 +22,4 @@ class Appointment {
   updated_at: Date;
 }
 
-export default Appointment;
+export default Specification;
